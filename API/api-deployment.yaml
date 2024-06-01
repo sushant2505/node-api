@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-api
-        image: your_dockerhub_username/node-api:latest
+        image: sushant2505/node-api:latest
         ports:
         - containerPort: 3000
         env:
