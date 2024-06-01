@@ -35,7 +35,7 @@ app.get('/items', async (req, res) => {
     const [rows] = await db.query('SELECT * FROM items');
     res.json(rows);
   } catch (err) {
-    res.status(500).send('Error retrieving data from database');
+    res.status(500).send(err);
   }
 });
 
